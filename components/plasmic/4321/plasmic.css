@@ -1,5 +1,6 @@
 @import "../plasmic_nav/plasmic.css"; /* plasmic-import: 7nJ7UcFmq9UzB6eXfC5z4a/projectcss */
 @import "../react_aria/plasmic.css"; /* plasmic-import: gmeH6XgPaBtkt51HunAo4g/projectcss */
+@import "../plasmic_embed_css/plasmic.css"; /* plasmic-import: 8PtdGodUbexNYgkuyBUcWu/projectcss */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600%3B0%2C700&family=Inter%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600%3B0%2C700&family=Inconsolata%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600%3B0%2C700&display=swap");
 
 .plasmic_tokens_3HUGjkFtDYKkVe7ziow89U {
@@ -139,6 +140,10 @@
   --plasmic-token-destructive-destructive-soft-foreground: var(
     --token--ghRwPLpPdkB
   );
+  --token--llVf0HgIGmL: 100%;
+  --plasmic-token-header-ench: var(--token--llVf0HgIGmL);
+  --token-o62UMTHh1l58: 1px;
+  --plasmic-token-unnamed-style-token-3: var(--token-o62UMTHh1l58);
 }
 
 .plasmic_tokens_3HUGjkFtDYKkVe7ziow89U {
@@ -355,6 +360,8 @@
   --plasmic-mixin-content-max_white-space: var(
     --mixin-BRSVsxxttjFX_white-space
   );
+  --mixin-KE03VNLacF16_white-space: pre-wrap;
+  --plasmic-mixin-con-on-raw_white-space: var(--mixin-KE03VNLacF16_white-space);
 }
 
 :where(.all) {

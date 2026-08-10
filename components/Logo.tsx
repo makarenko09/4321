@@ -19,7 +19,7 @@ import { HTMLElementRefOf } from "@plasmicapp/react-web";
 // total control over the props for your component.
 export interface LogoProps extends DefaultLogoProps {}
 
-function Logo_(props: LogoProps, ref: HTMLElementRefOf<"a">) {
+function Logo_(props: LogoProps, ref: HTMLElementRefOf<"div">) {
   // Use PlasmicLogo to render this component as it was
   // designed in Plasmic, by activating the appropriate variants,
   // attaching the appropriate event handlers, etc.  You

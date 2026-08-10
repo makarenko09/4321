@@ -261,20 +261,6 @@
       "cssFilePath": "plasmic/4321/plasmic.css",
       "components": [
         {
-          "id": "k_EpbmaqROkc",
-          "name": "Homepage",
-          "type": "managed",
-          "projectId": "3HUGjkFtDYKkVe7ziow89U",
-          "renderModuleFilePath": "plasmic/4321/PlasmicHomepage.tsx",
-          "importSpec": {
-            "modulePath": "../pages/index.tsx"
-          },
-          "cssFilePath": "plasmic/4321/PlasmicHomepage.module.css",
-          "scheme": "blackbox",
-          "componentType": "page",
-          "path": "/"
-        },
-        {
           "id": "ruO8lxflcYPF",
           "name": "Navbar",
           "type": "managed",
@@ -363,6 +349,19 @@
             "modulePath": "Button.tsx"
           },
           "cssFilePath": "plasmic/4321/PlasmicButton.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "-3BVGIuEyPIp",
+          "name": "Logo",
+          "type": "managed",
+          "projectId": "3HUGjkFtDYKkVe7ziow89U",
+          "renderModuleFilePath": "plasmic/4321/PlasmicLogo.tsx",
+          "importSpec": {
+            "modulePath": "Logo.tsx"
+          },
+          "cssFilePath": "plasmic/4321/PlasmicLogo.module.css",
           "scheme": "blackbox",
           "componentType": "component"
         }
@@ -634,10 +633,70 @@
           "id": "-GmKE2vdse0N",
           "name": "price-background.svg",
           "filePath": "../public/plasmic/4321/images/priceBackgroundSvg.svg"
+        },
+        {
+          "id": "hpFPRjriCX_q",
+          "name": "markus-spiske-hbb6GkG6p9M-unsplash.jpg",
+          "filePath": "../public/plasmic/4321/images/markusSpiskeHbb6GkG6P9MUnsplashJpg.jpg"
+        },
+        {
+          "id": "Oooav2WScv1c",
+          "name": "image",
+          "filePath": "../public/plasmic/4321/images/image.png"
+        },
+        {
+          "id": "p96NyS_rJYS9",
+          "name": "e96e046a942211f19319c27db0e081a9.png",
+          "filePath": "../public/plasmic/4321/images/e96E046A942211F19319C27Db0E081A9Png.png"
+        },
+        {
+          "id": "Wmws4w7EA7tv",
+          "name": "e96e046a942211f19319c27db0e081a9.png 2",
+          "filePath": "../public/plasmic/4321/images/e96E046A942211F19319C27Db0E081A9Png2.png"
+        },
+        {
+          "id": "4tREUNmu4joF",
+          "name": "image 2",
+          "filePath": "../public/plasmic/4321/images/image2.jpg"
+        },
+        {
+          "id": "7TPmLG_-ekgA",
+          "name": "image 3",
+          "filePath": "../public/plasmic/4321/images/image3.png"
+        },
+        {
+          "id": "sPg31EWnuN8J",
+          "name": "image 4",
+          "filePath": "../public/plasmic/4321/images/image4.png"
+        },
+        {
+          "id": "-FBiaaycLVCv",
+          "name": "zachary-black-4AwTCkbquoo-unsplash.jpg",
+          "filePath": "../public/plasmic/4321/images/zacharyBlack4AwTCkbquooUnsplashJpg.jpg"
+        },
+        {
+          "id": "eRV3-_5zOq11",
+          "name": "joan-gamell-ZS67i1HLllo-unsplash.jpg",
+          "filePath": "../public/plasmic/4321/images/joanGamellZs67I1HLlloUnsplashJpg.jpg"
+        },
+        {
+          "id": "jgiZg4_Qsu4Y",
+          "name": "image 5",
+          "filePath": "../public/plasmic/4321/images/image5.png"
+        },
+        {
+          "id": "lmomak6v3S_H",
+          "name": "image 6",
+          "filePath": "../public/plasmic/4321/images/image6.png"
+        },
+        {
+          "id": "_ZWPQXNs504r",
+          "name": "grunge-wall-texture.jpg",
+          "filePath": "../public/plasmic/4321/images/grungeWallTextureJpg.jpg"
         }
       ],
       "indirect": false,
-      "globalContextsFilePath": "",
+      "globalContextsFilePath": "plasmic/4321/PlasmicGlobalContextsProvider.tsx",
       "splitsProviderFilePath": "",
       "styleTokensProviderFilePath": "plasmic/4321/PlasmicStyleTokensProvider.tsx",
       "dataTokensFilePath": "",
@@ -654,6 +713,31 @@
           "name": "Fetcher",
           "displayName": "plasmic-data-source-fetcher",
           "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
+        }
+      ],
+      "customFunctions": []
+    },
+    {
+      "projectId": "8PtdGodUbexNYgkuyBUcWu",
+      "projectApiToken": "34o5R5KswluuZ4sD83F88oQrcLWsNNeUpCptQ8Okf4hYqgjnHnX2idGAlhtB7WWQQelNAInf5XFazR1cGw",
+      "projectName": "plasmic-embed-css",
+      "version": ">0.0.0",
+      "cssFilePath": "plasmic/plasmic_embed_css/plasmic.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "plasmic/plasmic_embed_css/PlasmicGlobalContextsProvider.tsx",
+      "splitsProviderFilePath": "",
+      "styleTokensProviderFilePath": "plasmic/plasmic_embed_css/PlasmicStyleTokensProvider.tsx",
+      "dataTokensFilePath": "",
+      "projectModuleFilePath": "plasmic/plasmic_embed_css/plasmic.tsx",
+      "codeComponents": [
+        {
+          "id": "qF0uJxFztB",
+          "name": "EmbedCss",
+          "displayName": "global-embed-css",
+          "componentImportPath": "@plasmicpkgs/plasmic-embed-css"
         }
       ],
       "customFunctions": []

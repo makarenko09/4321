@@ -1,35 +1,66 @@
 .root {
   display: flex;
-  position: relative;
   flex-direction: row;
+  position: relative;
   align-items: stretch;
   justify-content: flex-start;
-}
-.text {
-  animation: none;
-  position: relative;
   width: 100%;
   height: auto;
   max-width: 100%;
   min-width: 0;
+  padding: 8px;
 }
-.img {
+.freeBox__qT4Qn {
+  display: flex;
+  flex-direction: column;
+  height: 258px;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 0px 0px 4px 0px #0000001a;
+  background: #020202;
+  padding-top: 33px;
+  max-width: 410px;
+}
+.img__drrPn {
   object-fit: cover;
-  width: 100%;
-  height: 100%;
-  min-width: 0;
-  min-height: 0;
-  display: none;
+  max-width: 100%;
+  margin-right: 0px;
+  height: 219px;
+  flex-shrink: 0;
 }
-.img > picture > img {
+.img__drrPn > picture > img {
   object-fit: cover;
 }
-.img_50Opaque {
-  opacity: 0.5;
-}
-.imglargeLogo {
-  max-width: none;
-  max-height: none;
+.freeBox__hjZ4T {
+  display: flex;
+  flex-direction: column;
   width: 100%;
+  height: 258px;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 0px 0px 4px 0px #0000001a;
+  background: #020202;
+  padding-top: 33px;
+  max-width: 410px;
   min-width: 0;
+}
+.text {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  font-size: 90px;
+  font-family: "finlandica";
+  color: #c0c0c0;
+  background: none;
+  min-width: 0;
+}
+.img__i76Pw {
+  animation: none;
+  object-fit: cover;
+  max-width: 100%;
+  margin-top: 19px;
+}
+.img__i76Pw > picture > img {
+  object-fit: cover;
 }
