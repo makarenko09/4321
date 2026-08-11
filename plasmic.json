@@ -354,14 +354,27 @@
         },
         {
           "id": "-3BVGIuEyPIp",
-          "name": "Logo",
+          "name": "SecondatyLogo",
           "type": "managed",
           "projectId": "3HUGjkFtDYKkVe7ziow89U",
-          "renderModuleFilePath": "plasmic/4321/PlasmicLogo.tsx",
+          "renderModuleFilePath": "plasmic/4321/PlasmicSecondatyLogo.tsx",
           "importSpec": {
-            "modulePath": "Logo.tsx"
+            "modulePath": "SecondatyLogo.tsx"
           },
-          "cssFilePath": "plasmic/4321/PlasmicLogo.module.css",
+          "cssFilePath": "plasmic/4321/PlasmicSecondatyLogo.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "Y9vfs6E7GKqg",
+          "name": "PrimaryLogo",
+          "type": "managed",
+          "projectId": "3HUGjkFtDYKkVe7ziow89U",
+          "renderModuleFilePath": "plasmic/4321/PlasmicPrimaryLogo.tsx",
+          "importSpec": {
+            "modulePath": "PrimaryLogo.tsx"
+          },
+          "cssFilePath": "plasmic/4321/PlasmicPrimaryLogo.module.css",
           "scheme": "blackbox",
           "componentType": "component"
         }
@@ -693,6 +706,11 @@
           "id": "_ZWPQXNs504r",
           "name": "grunge-wall-texture.jpg",
           "filePath": "../public/plasmic/4321/images/grungeWallTextureJpg.jpg"
+        },
+        {
+          "id": "LShNTvSydrNx",
+          "name": "Без названия.png",
+          "filePath": "../public/plasmic/4321/images/безНазванияPng.png"
         }
       ],
       "indirect": false,
