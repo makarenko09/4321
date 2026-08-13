@@ -354,27 +354,27 @@
         },
         {
           "id": "-3BVGIuEyPIp",
-          "name": "SecondatyLogo",
+          "name": "Logo2",
           "type": "managed",
           "projectId": "3HUGjkFtDYKkVe7ziow89U",
-          "renderModuleFilePath": "plasmic/4321/PlasmicSecondatyLogo.tsx",
+          "renderModuleFilePath": "plasmic/4321/PlasmicLogo2.tsx",
           "importSpec": {
-            "modulePath": "SecondatyLogo.tsx"
+            "modulePath": "Logo2.tsx"
           },
-          "cssFilePath": "plasmic/4321/PlasmicSecondatyLogo.module.css",
+          "cssFilePath": "plasmic/4321/PlasmicLogo2.module.css",
           "scheme": "blackbox",
           "componentType": "component"
         },
         {
-          "id": "Y9vfs6E7GKqg",
-          "name": "PrimaryLogo",
+          "id": "lRs69RVE1bNJ",
+          "name": "Icon",
           "type": "managed",
           "projectId": "3HUGjkFtDYKkVe7ziow89U",
-          "renderModuleFilePath": "plasmic/4321/PlasmicPrimaryLogo.tsx",
+          "renderModuleFilePath": "plasmic/4321/PlasmicIcon.tsx",
           "importSpec": {
-            "modulePath": "PrimaryLogo.tsx"
+            "modulePath": "Icon.tsx"
           },
-          "cssFilePath": "plasmic/4321/PlasmicPrimaryLogo.module.css",
+          "cssFilePath": "plasmic/4321/PlasmicIcon.module.css",
           "scheme": "blackbox",
           "componentType": "component"
         }

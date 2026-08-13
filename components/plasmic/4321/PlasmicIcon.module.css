@@ -1,0 +1,31 @@
+.root {
+  animation: none;
+  display: inline-flex;
+  flex-direction: column;
+  height: 258px;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 0px 0px 4px 0px #0000001a;
+  background: #020202;
+  padding-top: 33px;
+  max-width: 410px;
+  width: auto;
+  position: relative;
+}
+@media (max-width: 930px) {
+  .root {
+    width: 100%;
+    min-width: 0;
+  }
+}
+.img {
+  animation: none;
+  object-fit: cover;
+  max-width: 100%;
+  margin-right: 0px;
+  height: 219px;
+  flex-shrink: 0;
+}
+.img > picture > img {
+  object-fit: cover;
+}
