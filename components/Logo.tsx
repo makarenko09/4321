@@ -35,7 +35,7 @@ function Logo_(props: LogoProps, ref: HTMLElementRefOf<"div">) {
   // By default, we are just piping all LogoProps here, but feel free
   // to do whatever works for you.
 
-  return <PlasmicLogo root={{ ref }} {...props} />;
+  return <PlasmicLogo row={{ ref }} {...props} />;
 }
 
 const Logo = React.forwardRef(Logo_);

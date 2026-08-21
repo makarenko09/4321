@@ -261,32 +261,6 @@
       "cssFilePath": "plasmic/4321/plasmic.css",
       "components": [
         {
-          "id": "ruO8lxflcYPF",
-          "name": "Navbar",
-          "type": "managed",
-          "projectId": "3HUGjkFtDYKkVe7ziow89U",
-          "renderModuleFilePath": "plasmic/4321/PlasmicNavbar.tsx",
-          "importSpec": {
-            "modulePath": "Navbar.tsx"
-          },
-          "cssFilePath": "plasmic/4321/PlasmicNavbar.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
-        },
-        {
-          "id": "1uxQwX5HQQd4",
-          "name": "Logo",
-          "type": "managed",
-          "projectId": "3HUGjkFtDYKkVe7ziow89U",
-          "renderModuleFilePath": "plasmic/4321/PlasmicLogo.tsx",
-          "importSpec": {
-            "modulePath": "Logo.tsx"
-          },
-          "cssFilePath": "plasmic/4321/PlasmicLogo.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
-        },
-        {
           "id": "0T3uxOagixp6",
           "name": "FooterSection",
           "type": "managed",
@@ -353,19 +327,6 @@
           "componentType": "component"
         },
         {
-          "id": "-3BVGIuEyPIp",
-          "name": "Logo2",
-          "type": "managed",
-          "projectId": "3HUGjkFtDYKkVe7ziow89U",
-          "renderModuleFilePath": "plasmic/4321/PlasmicLogo2.tsx",
-          "importSpec": {
-            "modulePath": "Logo2.tsx"
-          },
-          "cssFilePath": "plasmic/4321/PlasmicLogo2.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
-        },
-        {
           "id": "lRs69RVE1bNJ",
           "name": "Icon",
           "type": "managed",
@@ -375,6 +336,19 @@
             "modulePath": "Icon.tsx"
           },
           "cssFilePath": "plasmic/4321/PlasmicIcon.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "-3BVGIuEyPIp",
+          "name": "Logo",
+          "type": "managed",
+          "projectId": "3HUGjkFtDYKkVe7ziow89U",
+          "renderModuleFilePath": "plasmic/4321/PlasmicLogo.tsx",
+          "importSpec": {
+            "modulePath": "Logo.tsx"
+          },
+          "cssFilePath": "plasmic/4321/PlasmicLogo.module.css",
           "scheme": "blackbox",
           "componentType": "component"
         }
@@ -776,6 +750,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.371",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.371/dist/plasmic.schema.json"
+  "cliVersion": "0.1.373",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.373/dist/plasmic.schema.json"
 }

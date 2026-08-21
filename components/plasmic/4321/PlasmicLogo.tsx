@@ -59,6 +59,7 @@ import {
   useGlobalActions
 } from "@plasmicapp/react-web/lib/host";
 
+import Icon from "../../Icon"; // plasmic-import: lRs69RVE1bNJ/component
 import { _useGlobalVariants } from "./plasmic"; // plasmic-import: 3HUGjkFtDYKkVe7ziow89U/projectModule
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: 3HUGjkFtDYKkVe7ziow89U/styleTokensProvider
 
@@ -68,21 +69,28 @@ import sty from "./PlasmicLogo.module.css"; // plasmic-import: -3BVGIuEyPIp/css
 
 createPlasmicElementProxy;
 
-export type PlasmicLogo__VariantMembers = {};
-export type PlasmicLogo__VariantsArgs = {};
+export type PlasmicLogo__VariantMembers = {
+  primary: "primary";
+};
+export type PlasmicLogo__VariantsArgs = {
+  primary?: SingleBooleanChoiceArg<"primary">;
+};
 type VariantPropType = keyof PlasmicLogo__VariantsArgs;
-export const PlasmicLogo__VariantProps = new Array<VariantPropType>();
+export const PlasmicLogo__VariantProps = new Array<VariantPropType>("primary");
 
-export type PlasmicLogo__ArgsType = {};
+export type PlasmicLogo__ArgsType = { children?: React.ReactNode };
 type ArgPropType = keyof PlasmicLogo__ArgsType;
-export const PlasmicLogo__ArgProps = new Array<ArgPropType>();
+export const PlasmicLogo__ArgProps = new Array<ArgPropType>("children");
 
 export type PlasmicLogo__OverridesType = {
-  root?: Flex__<"div">;
-  text?: Flex__<"div">;
+  row?: Flex__<"div">;
+  icon?: Flex__<typeof Icon>;
+  freeBox?: Flex__<"div">;
 };
 
 export interface DefaultLogoProps {
+  children?: React.ReactNode;
+  primary?: SingleBooleanChoiceArg<"primary">;
   className?: string;
 }
 
@@ -125,12 +133,45 @@ function PlasmicLogo__RenderFunc(props: {
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
 
+  const stateSpecs: Parameters<typeof useDollarState>[0] = React.useMemo(
+    () => [
+      {
+        path: "primary",
+        type: "private",
+        variableType: "variant",
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => $props.primary
+      },
+      {
+        path: "variable",
+        type: "private",
+        variableType: "text",
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => ""
+      },
+      {
+        path: "unnamedGroupOfVariants",
+        type: "private",
+        variableType: "variant",
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) =>
+          $props.unnamedGroupOfVariants
+      }
+    ],
+    [$props, $ctx, $refs]
+  );
+
+  const $state = useDollarState(stateSpecs, {
+    $props,
+    $ctx,
+    $queries: {},
+    $q: {},
+    $refs
+  });
+
   const styleTokensClassNames = _useStyleTokens();
 
   return (
     <div
-      data-plasmic-name={"root"}
-      data-plasmic-override={overrides.root}
+      data-plasmic-name={"row"}
+      data-plasmic-override={overrides.row}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
       className={classNames(
@@ -139,73 +180,68 @@ function PlasmicLogo__RenderFunc(props: {
         "plasmic_default_styles",
         "plasmic_mixins",
         styleTokensClassNames,
-        sty.root
+        sty.row,
+        { [sty.rowprimary]: hasVariant($state, "primary", "primary") }
       )}
     >
-      <div className={classNames("all", sty.freeBox__qT4Qn)}>
-        <PlasmicImg__
-          alt={""}
-          className={classNames(sty.img__drrPn)}
-          displayHeight={"219px"}
-          displayMaxHeight={"none"}
-          displayMaxWidth={"100%"}
-          displayMinHeight={"0"}
-          displayMinWidth={"0"}
-          displayWidth={"auto"}
-          loading={"lazy"}
-          src={{
-            src: "/plasmic/4321/images/image.png",
-            fullWidth: 1604,
-            fullHeight: 1316,
-            aspectRatio: undefined
-          }}
-        />
-      </div>
-      <div className={classNames("all", sty.freeBox__hjZ4T)}>
-        <div
-          data-plasmic-name={"text"}
-          data-plasmic-override={overrides.text}
-          className={classNames(
-            "all",
-            "__wab_text",
-            sty.text,
-            "distressed-text"
-          )}
-        >
-          {"PROJECT"}
-        </div>
-        <PlasmicImg__
-          alt={""}
-          className={classNames(sty.img__i76Pw)}
-          displayHeight={"auto"}
-          displayMaxHeight={"none"}
-          displayMaxWidth={"100%"}
-          displayMinHeight={"0"}
-          displayMinWidth={"0"}
-          displayWidth={"auto"}
-          loading={"lazy"}
-          src={{
-            src: "/plasmic/4321/images/image6.png",
-            fullWidth: 298,
-            fullHeight: 120,
-            aspectRatio: undefined
-          }}
-        />
+      <Icon
+        data-plasmic-name={"icon"}
+        data-plasmic-override={overrides.icon}
+        className={classNames("__wab_instance", sty.icon, {
+          [sty.iconprimary]: hasVariant($state, "primary", "primary")
+        })}
+      />
+
+      <div
+        data-plasmic-name={"freeBox"}
+        data-plasmic-override={overrides.freeBox}
+        className={classNames("all", sty.freeBox)}
+      >
+        {renderPlasmicSlot({
+          defaultContents: (
+            <React.Fragment>
+              <div
+                className={classNames(
+                  "all",
+                  "__wab_text",
+                  sty.text__nxcw6,
+                  "distressed-text"
+                )}
+              >
+                {"PROJECT"}
+              </div>
+              <div
+                className={classNames(
+                  "all",
+                  "__wab_text",
+                  sty.text__sX98U,
+                  "distressed-text, dev-ision-animate"
+                )}
+              >
+                {"dev.ision"}
+              </div>
+            </React.Fragment>
+          ),
+          value: args.children,
+          className: classNames(sty.slotTargetChildren)
+        })}
       </div>
     </div>
   ) as React.ReactElement | null;
 }
 
 const PlasmicDescendants = {
-  root: ["root", "text"],
-  text: ["text"]
+  row: ["row", "icon", "freeBox"],
+  icon: ["icon"],
+  freeBox: ["freeBox"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
-  root: "div";
-  text: "div";
+  row: "div";
+  icon: typeof Icon;
+  freeBox: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -213,7 +249,6 @@ type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicLogo__OverridesType,
   DescendantsType<T>
 >;
-
 type NodeComponentProps<T extends NodeNameType> =
   // Explicitly specify variants, args, and overrides as objects
   {
@@ -258,7 +293,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       forNode: nodeName
     });
   };
-  if (nodeName === "root") {
+  if (nodeName === "row") {
     func.displayName = "PlasmicLogo";
   } else {
     func.displayName = `PlasmicLogo.${nodeName}`;
@@ -268,10 +303,11 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
 
 export const PlasmicLogo = Object.assign(
   // Top-level PlasmicLogo renders the root element
-  makeNodeComponent("root"),
+  makeNodeComponent("row"),
   {
     // Helper components rendering sub-elements
-    text: makeNodeComponent("text"),
+    icon: makeNodeComponent("icon"),
+    freeBox: makeNodeComponent("freeBox"),
 
     // Metadata about props expected for PlasmicLogo
     internalVariantProps: PlasmicLogo__VariantProps,
